@@ -1,5 +1,5 @@
-const app = require('../server');
+const app = require('../server.js');
 
 app.get('/', function(req, res) {
-  res.sendFile('home.html');
+  res.sendFile(__dirname + '/public/home.html');
 });
