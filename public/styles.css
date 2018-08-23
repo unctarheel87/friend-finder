@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+
+section {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.input-field {
+  margin: 40px 0;
+}
