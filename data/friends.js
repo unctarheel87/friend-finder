@@ -1,7 +1,7 @@
 const friends = [
 {
   "name":"Obama",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"obama.jpg",
   "scores":[
       5,
       1,
@@ -17,7 +17,7 @@ const friends = [
 },
 {
   "name":"Bono",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"bono.jpg",
   "scores":[
       5,
       1,
@@ -33,7 +33,7 @@ const friends = [
 },
 {
   "name":"Beyoncé",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"beyonce.jpg",
   "scores":[
       5,
       1,
@@ -49,7 +49,7 @@ const friends = [
 },
 {
   "name":"Elon",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"elon.jpg",
   "scores":[
       5,
       1,
@@ -65,7 +65,7 @@ const friends = [
 },
 {
   "name":"Ruth",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+  "photo":"ruth.jpg",
   "scores":[
       5,
       1,
