@@ -2,7 +2,7 @@
 
 body {
   text-align: center;
-  background: url('/images/geometry2.png');
+  background: url('/images/cloudy-day.png');
   font-family: 'Nunito', sans-serif;
 }
 
@@ -17,6 +17,7 @@ section {
 
 #survey-form p {
   font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 #survey-form .select-wrapper {
@@ -24,7 +25,12 @@ section {
   margin: 0 auto;
 }
 
-.select-wrapper+label {
+#survey-form input {
+  border-bottom: 1px solid lightgray;
+  color: rgba(128, 128, 128, 0.75)
+}
+
+#survey-form .select-wrapper+label {
   top: -35px;
 }
 

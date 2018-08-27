@@ -154,7 +154,7 @@
           <label>Question 10</label>
         </div>
       </div>
-      <button class="btn waves-effect waves-light" type="submit" id="survey-btn">Submit
+      <button class="btn waves-effect waves-light red lighten-2" type="submit" id="survey-btn">Submit
           <i class="material-icons right">send</i>
       </button>
     </form>
@@ -189,8 +189,8 @@
       $.post(url, surveyResults).done(function(data) {
         const h3 = $('<h3>')
         const img = $('<img>')
-        $('.modal-content h3').empty()
-        $('.modal-content img').empty()
+        $('.modal-content h3').remove()
+        $('.modal-content img').remove()
         $('.modal-content').append(h3).append(img)
         h3.text(data.name)
         img.attr('src', "/images/" + data.photo)
