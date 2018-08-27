@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 body {
   text-align: center;
+  background: url('/images/geometry2.png');
+  font-family: 'Nunito', sans-serif;
 }
 
 section {
-  width: 350px;
+  width: 500px;
   margin: 50px auto;
 }
 
-form .input-field {
+#survey-form .input-field {
   margin: 80px 0;
+}
+
+#survey-form p {
+  font-size: 1.3rem;
+}
+
+#survey-form .select-wrapper {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .select-wrapper+label {
