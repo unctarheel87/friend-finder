@@ -14,3 +14,7 @@ form .input-field {
 .select-wrapper+label {
   top: -35px;
 }
+
+.modal-content img {
+  height: 260px;
+}
