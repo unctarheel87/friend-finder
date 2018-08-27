@@ -149,7 +149,7 @@
       e.preventDefault();
       const surveyScores = []
       $("#survey-form select").each(function() {
-        surveyScores.push($(this).val())
+        surveyScores.push(parseInt($(this).val()))
       });
       const surveyResults = {"scores": surveyScores}
       const url = "/api/friends"
