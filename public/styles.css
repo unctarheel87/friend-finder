@@ -37,3 +37,7 @@ section {
 .modal-content img {
   height: 240px;
 }
+
+.progress {
+  margin-top: 40px;
+}

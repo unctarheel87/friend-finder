@@ -163,12 +163,16 @@
    <!-- Modal Structure -->
    <div id="modal1" class="modal">
      <div class="modal-content">
-       <h4>Your friend match is...</h4>
+        <h4>Your friend match is...</h4>
+        <div class="progress">
+          <div class="indeterminate"></div>
+        </div>
      </div>
      <div class="modal-footer">
        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
      </div>
    </div>
+   
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>  
@@ -187,14 +191,21 @@
       const surveyResults = {"scores": surveyScores}
       const url = "/api/friends"
       $.post(url, surveyResults).done(function(data) {
-        const h3 = $('<h3>')
-        const img = $('<img>')
+        const apiData = data
+        //clear modal
         $('.modal-content h3').remove()
         $('.modal-content img').remove()
-        $('.modal-content').append(h3).append(img)
-        h3.text(data.name)
-        img.attr('src', "/images/" + data.photo)
+        //show progress bar
         $('.modal').modal('open')
+        $('.progress').show();
+        setTimeout(function(apiData) {
+          $('.progress').hide();
+          const h3 = $('<h3>')
+          const img = $('<img>')
+          $('.modal-content').append(h3).append(img)
+          h3.text(data.name)
+          img.attr('src', "/images/" + data.photo)
+        }, 3000)
       });
     })
   });
