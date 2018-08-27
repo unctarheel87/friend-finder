@@ -26,8 +26,7 @@ app.get('/api/friends', function(req, res) {
 app.post('/api/friends', function(req, res) {
   const surveyResults = req.body
   console.log(JSON.stringify(surveyResults) + " sent to api!")
-  console.log(findBestMatch(friends, surveyResults))
-  res.json(surveyResults)
+  res.json(findBestMatch(friends, surveyResults))
 })
 
 //start server

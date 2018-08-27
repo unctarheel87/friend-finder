@@ -139,12 +139,25 @@
       </button>
     </form>
   </section>
+
+   <!-- Modal Structure -->
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+       <h4>Your friend is...</h4>
+     </div>
+     <div class="modal-footer">
+       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+     </div>
+   </div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>  
 <script>
   $(document).ready(function(){
+    //materialize components
     $('select').formSelect();
-   
+    $('.modal').modal();
+    //form & api logic
     $('#survey-btn').on('click', function(e) {
       e.preventDefault();
       const surveyScores = []
@@ -153,8 +166,14 @@
       });
       const surveyResults = {"scores": surveyScores}
       const url = "/api/friends"
-      $.post(url, surveyResults).then(function() {
-        console.log('success!')
+      $.post(url, surveyResults).done(function(data) {
+        console.log(data)
+        const h3 = $('<h3>')
+        const img = $('<img>')
+        $('.modal-content').append(h3).append(img)
+        h3.text(data.name)
+        img.attr('src', "/images/" + data.photo)
+        $('.modal').modal('open')
       });
     })
   });
