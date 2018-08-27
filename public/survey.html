@@ -147,11 +147,11 @@
    
     $('#survey-btn').on('click', function(e) {
       e.preventDefault();
-      const surveyResults = []
+      const surveyScores = []
       $("#survey-form select").each(function() {
-        surveyResults.push(parseInt($(this).val()))
+        surveyScores.push($(this).val())
       });
-      console.log(surveyResults)
+      const surveyResults = {"scores": surveyScores}
       const url = "/api/friends"
       $.post(url, surveyResults).then(function() {
         console.log('success!')

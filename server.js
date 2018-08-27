@@ -25,7 +25,8 @@ app.get('/api/friends', function(req, res) {
 
 app.post('/api/friends', function(req, res) {
   const surveyResults = req.body
-  console.log(surveyResults + " sent to api!")
+  console.log(JSON.stringify(surveyResults) + " sent to api!")
+  res.json(surveyResults)
 })
 
 //start server
