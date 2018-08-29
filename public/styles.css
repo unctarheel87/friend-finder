@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   text-align: center;
   background: url('/images/cloudy-day.png');
   font-family: 'Nunito', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .home-text {
@@ -24,7 +31,8 @@ body {
 
 section {
   width: 500px;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 #survey-form .input-field {
@@ -56,4 +64,17 @@ section {
 
 .progress {
   margin-top: 40px;
+}
+
+footer a {
+  color: white;
+  font-size: 16px;
+}
+
+footer {
+  height: 60px;
+}
+
+footer a:hover {
+  color:lightgray
 }
