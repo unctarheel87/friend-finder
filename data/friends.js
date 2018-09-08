@@ -1,7 +1,7 @@
 const friends = [
 {
   "name":"Obama",
-  "photo":"obama.jpg",
+  "photo":"/images/obama.jpg",
   "scores":[
       1,
       3,
@@ -17,7 +17,7 @@ const friends = [
 },
 {
   "name":"Bono",
-  "photo":"bono.jpg",
+  "photo":"/images/bono.jpg",
   "scores":[
       4,
       3,
@@ -33,7 +33,7 @@ const friends = [
 },
 {
   "name":"Beyoncé",
-  "photo":"beyonce.jpg",
+  "photo":"/images/beyonce.jpg",
   "scores":[
       4,
       5,
@@ -49,7 +49,7 @@ const friends = [
 },
 {
   "name":"Elon",
-  "photo":"elon.jpg",
+  "photo":"/images/elon.jpg",
   "scores":[
       2,
       1,
@@ -65,7 +65,7 @@ const friends = [
 },
 {
   "name":"Ruth",
-  "photo":"ruth.jpg",
+  "photo":"/images/ruth.jpg",
   "scores":[
       2,
       3,

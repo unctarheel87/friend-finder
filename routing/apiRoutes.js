@@ -8,6 +8,7 @@ module.exports = function(app) {
     const surveyResults = req.body
     console.log(JSON.stringify(surveyResults) + " sent to api!")
     res.json(findBestMatch(friends, surveyResults))
+    friends.push(surveyResults);
   })
 }
 
